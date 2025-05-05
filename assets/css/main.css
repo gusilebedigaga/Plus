@@ -1,0 +1,23 @@
+/* 1. Абстракции (переменные) */
+@import "abstracts/variables.css"; /*Переменные */
+@import "abstracts/animation.css"; /*Анимации */
+
+/* 2. Базовые стили */
+@import "base/normalize.css"; /* normalize.css */
+@import "base/accessibility.css"; /* Стили для доступности */
+@import "base/fonts.css"; /* Определения @font-face */
+@import "base/base.css"; /* Базовые стили для body */
+@import "base/typography.css"; /* Стили для типографических элементов */
+
+/* 3. Стили макета */
+@import "layout/header.css"; /* Стили для header */
+@import "layout/slider.css"; /* Стили для slider */
+@import "layout/about.css"; /* Стили для about */
+@import "layout/products.css"; /* Стили для products */
+@import "layout/purchase.css"; /* Стили для purchase */
+@import "layout/reviews.css"; /* Стили для reviews */
+@import "layout/footer.css"; /* Стили для footer */
+
+/* 4. Cтили компонентов UI */
+@import "components/button.css"; /* Стили для кнопок */
+@import "components/about-feature.css"; /* Стили для карточек приемуществ */

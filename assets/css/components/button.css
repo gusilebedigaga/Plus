@@ -1,0 +1,33 @@
+.button {
+  width: clamp(220px, 15.62dvw, 300px);
+  font-size: clamp(45px, 3.1dvw, 60px);
+  padding: var(--padding-small);
+  border-radius: var(--border-radius);
+  background-color: var(--color-accent);
+  border: none;
+  color: var(--color-text);
+  line-height: var(--font-line-height);
+  letter-spacing: var(--font-letter-spacing-base);
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+@media (hover: hover) {
+  .button:hover {
+    background-color: var(--color-accent-hover);
+    color: var(--color-text);
+  }
+}
+
+@media (max-width: 800px) {
+  .button {
+    letter-spacing: var(--font-letter-spacing-small);
+    width: clamp(150px, 30.5dvw, 220px);
+    font-size: clamp(30px, 6.25dvw, 50px);
+  }
+}

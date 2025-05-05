@@ -1,0 +1,117 @@
+body {
+  background-color: var(--color-primary);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: calc(
+    var(--container-width) + var(--container-padding-inline-large) * 2
+  );
+  margin-inline: auto;
+  padding-inline: var(--container-padding-inline-large);
+}
+
+.container-small {
+  max-width: calc(
+    var(--container-small-width) + var(--container-padding-inline-large) * 2
+  );
+  margin-inline: auto;
+  padding-inline: var(--container-padding-inline-large);
+}
+
+.container-large {
+  max-width: calc(100% - var(--container-padding-inline-large) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-inline-large);
+}
+
+.container-wide {
+  width: 100%;
+}
+
+.container.padding-block,
+.container-small.padding-block,
+.container-large.padding-block,
+.container-wide.padding-block {
+  padding-block: var(--container-padding-block-large);
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: calc(
+      var(--container-width) + var(--container-padding-inline-base) * 2
+    );
+    margin-inline: auto;
+    padding-inline: var(--container-padding-inline-base);
+  }
+
+  .container-small {
+    max-width: calc(
+      var(--container-small-width) + var(--container-padding-inline-base) * 2
+    );
+    margin-inline: auto;
+    padding-inline: var(--container-padding-inline-base);
+  }
+
+  .container-large {
+    max-width: calc(100% - var(--container-padding-inline-base) * 2);
+    margin-inline: auto;
+    padding-inline: var(---container-padding-inline-base);
+  }
+
+  .container.padding-block,
+  .container-small.padding-block,
+  .container-large.padding-block,
+  .container-wide.padding-block {
+    padding-block: var(--container-padding-block-base);
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: calc(
+      var(--container-width) + var(--container-padding-inline-small) * 2
+    );
+    margin-inline: auto;
+    padding-inline: var(--container-padding-inline-small);
+  }
+
+  .container-small {
+    max-width: calc(
+      var(--container-small-width) + var(--container-padding-inline-small) * 2
+    );
+    margin-inline: auto;
+    padding-inline: var(--container-padding-inline-small);
+  }
+
+  .container-large {
+    max-width: calc(100% - var(--container-padding-inline-small) * 2);
+    margin-inline: auto;
+    padding-inline: var(--container-padding-inline-small);
+  }
+
+  .container.padding-block,
+  .container-small.padding-block,
+  .container-large.padding-block,
+  .container-wide.padding-block {
+    padding-block: var(--container-padding-block-small);
+  }
+}
+
+a,
+button,
+input,
+textarea,
+svg {
+  transition: var(--transition-base);
+}
+
+:focus-visible {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-outline-offset);
+}
+
+::selection {
+  color: var(--color-text);
+  background-color: var(--color-accent);
+}

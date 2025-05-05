@@ -1,0 +1,65 @@
+:root {
+  /* Основные цвета */
+  --color-primary: #121212; /* Глубокий чёрный */
+  --color-secondary: #242424; /* Альтернативный фон */
+  --color-secondary-alt: #1a1a1a; /* Тёмный графит */
+  --color-text: #f0f0f0; /* Светлый текст */
+  --color-heading: #ffffff; /* Белые заголовки */
+
+  /* Акценты - благородный зелёный */
+  --color-accent: #4a6b57; /* Основной акцент (цвет из лого)*/
+  --color-accent-hover: #3a5a47; /* Акцент при наведении */
+
+  /*Доступность*/
+  --focus-outline: 2px solid var(--color-accent);
+  --focus-outline-offset: 2px;
+
+  /* Типографика */
+  --font-family-primary: "GeniralFont", sans-serif;
+  --font-family-base: "NotoSans", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-black: 900;
+  --font-line-height-base: 1;
+  --font-line-height-small: 1.3;
+  --font-line-height-large: 1.7;
+  --font-size-base: 40px;
+  --font-letter-spacing-small: 1.3px;
+  --font-letter-spacing-base: 2.5px;
+  --font-letter-spacing-large: 5px;
+
+  /* Размеры */
+  --header-min-height: 80px; /* Высота шапки сайта */
+  --container-width: 1400px; /* Максимальная ширина контейнера */
+  --container-small-width: 800px; /* Максимальная ширина маленького контейнера */
+
+  --container-padding-inline-small: 10px; /* Отступы по бокам контейнера */
+  --container-padding-inline-base: 20px; /* Отступы по бокам контейнера */
+  --container-padding-inline-large: 30px; /* Отступы по бокам контейнера */
+
+  --container-padding-block-small: 20px; /* Отступы по высоте контейнера */
+  --container-padding-block-base: 35px; /* Отступы по высоте контейнера */
+  --container-padding-block-large: 50px; /* Отступы по высоте контейнера */
+
+  --gap-small: 10px;
+  --gap-base: 20px; /* Отступы в grid и flex*/
+  --gap-large: 30px; /* Отступы в grid и flex*/
+
+  --padding-small: 10px; /*Внутренние отступы для элементов*/
+  --padding-base: 30px; /*Внутренние отступы для элементов*/
+  --padding-large: 60px; /*Внутренние отступы для элементов*/
+
+  --margin-small: 15px; /*Внутренние отступы для элементов*/
+  --margin-base: 30px; /*Внутренние отступы для элементов*/
+  --margin-large: 75px; /*Внутренние отступы для элементов*/
+
+  /*UI*/
+  --pagination-button-width: clamp(8px, 3dvw, 15px);
+  --pagination-button-color: rgba(255, 255, 255, 0.5);
+
+  /* Рамка */
+  --border-radius: 15px; /* Радиус скругления углов */
+  --border-base: 3px solid var(--color-accent); /* Базовая рамка */
+
+  /* Переход */
+  --transition-base: 0.2s ease; /* Базовая длительность анимаций */
+}
